@@ -19,7 +19,7 @@ const set = {
     return this.collection.length;
   },
   union(other) {
-    const newSet = mySet();
+    const newSet = MySet();
 
     this.collection.map(elem => newSet.add(elem));
     other.collection.map(elem => newSet.add(elem));
@@ -27,14 +27,14 @@ const set = {
     return newSet;
   },
   intersection(other) {
-    const newSet = mySet();
+    const newSet = MySet();
 
     this.collection.filter(elem => other.has(elem)).map(elem => newSet.add(elem));
 
     return newSet;
   },
   difference(other) {
-    const newSet = mySet();
+    const newSet = MySet();
 
     this.collection.filter(elem => !other.has(elem)).map(elem => newSet.add(elem));
     other.collection.filter(elem => !this.has(elem)).map(elem => newSet.add(elem));
@@ -46,5 +46,5 @@ const set = {
   }
 }
 
-export const mySet = () => Object.create(set, { collection: { value: [] } });
+export const MySet = () => Object.create(set, { collection: { value: [] } });
 

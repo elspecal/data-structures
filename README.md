@@ -7,7 +7,7 @@ import { MySet } from './set.mjs';
 ```
 or
 ```
-const { MySet } = import('./set.mjs');
+const { MySet } = await import('./set.mjs');
 ```
 then
 ```
