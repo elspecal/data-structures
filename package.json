@@ -1,0 +1,24 @@
+{
+  "name": "data-structures",
+  "version": "0.1.0",
+  "description": "Data Structures implemented as ES modules.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elspecal/datastructures.git"
+  },
+  "keywords": [
+    "data-structures",
+    "algorithms",
+    "CS"
+  ],
+  "author": "Miki Csepella",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/elspecal/data-structures/issues"
+  },
+  "homepage": "https://github.com/elspecal/data-structures#readme"
+}
