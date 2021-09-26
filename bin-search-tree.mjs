@@ -6,14 +6,14 @@ const bst = {
   add(data) {
     const node = this.root;
 
-    if (null === node) {
+    if (!node) {
       this.root = Node(data);
       return;
     }
 
     const searchTree = node => {
       if (data < node.data) {
-	if (null === node.left) {
+	if (!node.left) {
 	  node.left = Node(data);
 	  return;
 	}
@@ -22,7 +22,7 @@ const bst = {
       }
 
       if (data > node.data) {
-	if (null === node.right) {
+	if (!node.right) {
 	  node.right = Node(data);
 	  return;
 	}
